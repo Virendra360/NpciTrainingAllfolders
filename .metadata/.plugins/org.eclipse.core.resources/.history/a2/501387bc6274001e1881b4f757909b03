@@ -1,0 +1,22 @@
+package com.npci.service;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+@SpringBootTest
+class WalletServiceImplTest {
+    @Autowired
+	private WalletService walletService;
+	
+	@Test
+	void showBalanceTest() {
+		 double amount=walletService.showBalance(1055);
+		 System.out.println("_____________");
+		 System.out.println("Amount : " +amount);
+		 System.out.println("_____________");
+	}
+
+}

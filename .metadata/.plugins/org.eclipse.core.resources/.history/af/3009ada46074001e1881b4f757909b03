@@ -1,0 +1,35 @@
+package com.npci.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+import com.npci.beans.Wallet;
+import com.npci.dao.WalletDao;
+
+@Service("walletService")
+public class WalletServiceImpl implements WalletService{
+
+	@Autowired
+	private WalletDao walletDao;
+
+	@Override
+	public void addFund(int fund) {
+		
+		
+	}
+
+	@Override
+	public Wallet showBalance(int wallet_id) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public boolean transferFund(int fund, int wallet_id_issuere, int wallet_id_receiever) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+	
+	
+	
+}

@@ -1,0 +1,5 @@
+package cpm.npci.ExceptionsStore;
+
+public class LowBalanceException {
+
+}

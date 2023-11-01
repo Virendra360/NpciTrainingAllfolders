@@ -1,0 +1,33 @@
+package com.npci.service;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import java.util.Optional;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.npci.beans.Profile;
+
+import cpm.npci.ExceptionsStore.ProfileNotFoundException;
+
+@SpringBootTest
+class ProfileServiceImplTest {
+  // autowired the ProfileServiceImpl
+	@Autowired
+	private ProfileService profileService;
+	
+	@Test
+	void showProfileTest() {
+		try {
+			Optional<Profile>  pf= profileService.showProfile(2);
+			 System.out.println(pf);
+		}catch(ProfileNotFoundException e) {
+			  System.out.println(e);
+		}
+		 
+		  
+	}
+
+}

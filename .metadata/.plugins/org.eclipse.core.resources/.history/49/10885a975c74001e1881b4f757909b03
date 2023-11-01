@@ -1,0 +1,17 @@
+package com.npci.service;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+
+import com.npci.dao.WalletDao;
+
+@Service("walletService")
+public class WalletServiceImpl extends Wallet{
+
+	@Autowired
+	private WalletDao walletDao;
+	
+	
+	
+}

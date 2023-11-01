@@ -1,0 +1,15 @@
+package com.npci.dao;
+
+import java.util.List;
+
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+
+import com.npci.beans.Contact;
+
+public interface ContactDao extends JpaRepository<Contact, Integer>{
+	
+	// auto implement CRUD methods
+//    @Query("select c from Contact c where c.profile_id_ref=?1")
+    List<Contact> findContactByProfileIdRef(int profile_id_ref);
+}

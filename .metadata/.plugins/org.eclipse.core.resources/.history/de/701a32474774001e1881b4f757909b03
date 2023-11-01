@@ -1,0 +1,24 @@
+package com.npci.dao;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import com.npci.beans.Contact;
+
+@SpringBootTest
+class ContactDaoTest {
+   // autowired  the ContactDao we need methods of it
+	@Autowired
+	private ContactDao contactDao;
+	
+	@Test
+	void addContactTest() {
+		     
+		 Contact contact1=new Contact(0,1,1055);
+		 contactDao.save(contact1);
+	}
+
+}

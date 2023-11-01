@@ -1,0 +1,12 @@
+package com.npci.service;
+
+import java.time.LocalDate;
+
+import com.npci.beans.Profile;
+
+public interface ProfileService {
+    // creating new profile
+  public Profile createProfile(String name, String email_id, String password, LocalDate dob, long phone);
+
+  
+}

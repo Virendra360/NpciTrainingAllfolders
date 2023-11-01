@@ -1,0 +1,9 @@
+package com.npci.service;
+
+public interface WalletService  {
+    // add funds
+	
+	// show balance
+	
+	// fund transfer
+}

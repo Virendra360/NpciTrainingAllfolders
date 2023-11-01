@@ -1,0 +1,7 @@
+server.port=9092
+# give application name and files profiles name same
+spring.application.name=hello
+# location of cofiguration server
+spring.config.import=optional:cofigserver:http://localhost:8888
+# profiles-enviroment -picks name-<profiles>.properties
+spring.profiles.active=dev

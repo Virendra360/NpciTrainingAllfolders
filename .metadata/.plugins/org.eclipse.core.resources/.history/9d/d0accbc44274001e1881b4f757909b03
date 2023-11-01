@@ -1,0 +1,10 @@
+#spring website has list of all the properties
+#server.port is to specify the port number, by default it uses 
+
+server.port=9091
+spring.datasource.url=jdbc:mysql://localhost:3306/npci_db
+spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+spring.datasource.username=root
+spring.datasource.password=September@2023
+
+

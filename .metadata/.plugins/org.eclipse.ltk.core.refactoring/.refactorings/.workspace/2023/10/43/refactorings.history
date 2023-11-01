@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;com.npci&apos; to &apos;contact_app_application&apos;&#x0D;&#x0A;- Original element: &apos;com.npci&apos;&#x0D;&#x0A;- Renamed element: &apos;com.npci&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;com.npci&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=com.npci" name="contact_app_application" references="true" stamp="1697964469943" version="1.0"/>
+</session>
